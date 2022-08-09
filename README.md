@@ -1,6 +1,6 @@
 # Ecommerce Buenas Carnes
 
-<img src="./imagenes/banner principal.jpg">
+![banner principal](https://user-images.githubusercontent.com/72087538/183550948-183e669c-f26b-4392-af90-cf744a26d014.jpg)
 
 ----
 

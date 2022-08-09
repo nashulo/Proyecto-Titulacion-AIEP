@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Venta Buenas carnes</title>
+        <link rel="stylesheet" href="Estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header class="head">    
+            <div class="contenedor">
+                <div class="head__contenido">
+                    <img src="./imagenes/logo buenas carnes.jpg" alt="..." class="head__contenido--image">
+
+                    <nav class="head__nav">
+                        <a href="./" class="head__nav--link">Inicio</a>
+                        <a href="./register.html" class="head__nav--link">Registrarse</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="login">
+                <div class="contenedor">
+                    <h1 class="login__titulo">Sign in</h1>
+
+                    <form action="auth.php" method="post" id="formLogin" class="login__form">
+                        <div class="login__group">
+                            <label for="usuario" class="login__group--label">Email o Usuario</label>
+                            <input type="text" name="usuario" id="usuario" placeholder="Email o Usuario" autocomplete="off" class="login__group--input">
+                        </div>
+                        <div class="login__group">
+                            <label for="contrasenha" class="login__group--label">Contraseña</label>
+                            <input type="password" name="contrasenha" id="contrasenha" placeholder="Contraseña" autocomplete="off" class="login__group--input">
+                        </div>
+
+                        <button type="button" id="auth-login" class="login__form--boton">Ingresar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+
+        <script src="Cod.js"></script>
+    </body>
+</html>

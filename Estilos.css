@@ -1,0 +1,303 @@
+:root {
+    --color-blanco: #fff;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(28, 28, 28);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+
+.head {
+    padding: 1.2rem;
+}
+
+.head__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head__contenido--titulo {
+    color: #fff;
+}
+
+/* logo */
+.head__contenido--image {
+    width: 100px;
+    height: 80px;
+}
+
+.head__nav--link {
+    color: #000;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: #fff;
+    padding: 12px 16px; /* top/bottom(12px) right/left(16px) */
+    border-radius: 5px;
+    margin-right: 25px; /* Esto es modificable */
+    font-weight: 600;
+    cursor: default;
+}
+
+.head__nav--link:hover {
+    cursor: default;
+    text-decoration: underline;
+}
+
+.head__nav--link:last-child {
+    margin-right: 0;
+}
+
+.head__nav--link > .fa-shopping-cart {
+    margin-right: 8px;
+}
+
+
+
+.banner__logo {
+    width: 100%;
+    max-width: 1940px;
+}
+
+.nosotros {} /* // Este es un elemento padre de la etiqueta (NO TOCAR SI NO ES NECESARIO) */
+
+.nosotros__header--titulo {
+    text-align: center;
+    color: var(--color-blanco);
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.nosotros__contenido--subtitulo {
+    color: var(--color-blanco);
+    font-size: 30px;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    
+}
+
+.nosotros__contenido {
+    display: flex;
+    align-items: flex-start;
+}
+
+.vaca_feliz {
+    width: 500px;
+    border-radius: 18%;
+}
+
+.nosotros__contenido--image {
+    padding: 0 3.5rem;
+}
+
+.nosotros__contenido--texto {
+    color: var(--color-blanco);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+
+.productos_principales  h2 {
+    color: var(--color-blanco);
+    text-align: center;
+    font-size: 32px;
+    padding-top: 2.5rem;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.producto {
+    margin: 0 1rem 0 0;    
+    padding-bottom: 1.5rem;
+}
+
+.categoria-carne-titulo {
+    color: var(--color-blanco);
+    margin-bottom: .6rem;
+}
+
+.producto-title {
+    color: var(--color-blanco);
+    margin-bottom: 0.5rem;
+}
+
+.producto-image {  
+    width: 250px;
+    height: 180px;
+}
+
+.producto > button {
+    border: none;
+    background-color:rgb(28, 28, 28);
+    padding: 5px 10px;
+    color: #fff;
+    letter-spacing: 1.2px;
+    border: 1px solid brown;
+    border-radius: 5px;
+    cursor: default;
+    transition: .3s all ease;
+}
+
+.producto > button:hover {
+    background: brown;
+    cursor: default;
+    color: var(--color-blanco);
+}
+
+/** colores de precio, cantidad, producto   **/ 
+.color_precio{
+    color: antiquewhite;
+    font-weight: 600;
+}
+.color_producto{
+    color:rgb(255, 255, 255)
+}
+.color_cantidad{
+    color:aquamarine
+}
+/** hasta acá **/
+
+
+
+
+
+
+
+
+/* Estilos para pagina carrito */
+.boleta {
+    margin-top: 3rem;
+}
+
+.boleta button {
+    width: 200px;
+    padding: 10px 14px;
+    margin: 30px auto;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    cursor: default;
+    transition: .3s all ease;
+    background: brown;
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+
+.boleta button:hover {
+    background: #610d0d;
+}
+
+table {
+    width: 400px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+table th {
+    text-align: left;
+}
+
+table td {
+    font-weight: 600px;
+}
+
+
+
+
+
+
+/* estilos para la pagina del login */
+.login__titulo {
+    color: var(--color-blanco);
+    text-align: center;
+    font-size: 32px;
+}
+
+.login__form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login__form label {
+    position: relative;
+    bottom: 0.5rem;
+}
+
+.login__group {
+    margin-bottom: 1.5rem;
+}
+
+.login__group--label {
+    color: var(--color-blanco);
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+
+.login__group--input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border:none;
+    font-size: 16px;
+}
+
+.login__group--input:focus {
+    outline: 0;
+}
+
+.login__form--boton {
+    width: 200px;
+    padding: 10px 14px;
+    margin: 30px auto;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    cursor: default;
+    transition: .3s all ease;
+    background: brown;
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-size: 16px;
+}
+
+.login__form--boton:hover {
+    background: #610d0d;
+}
+
+
+
+
+
+
+
+/* EStilos para pie de pagina */
+footer {
+    padding: 30px 16px;
+    text-align: center;
+}
+
+footer > a {
+    color: var(--color-blanco);
+}
